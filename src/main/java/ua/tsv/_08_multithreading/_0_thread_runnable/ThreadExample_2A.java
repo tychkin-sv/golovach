@@ -5,7 +5,7 @@ package ua.tsv._08_multithreading._0_thread_runnable;
  */
 public class ThreadExample_2A {
     public static void main(String[] args) throws InterruptedException {
-        PrintRunnable runnable = new PrintRunnable("B", 100);
+        PrintRunnable runnable = new PrintRunnable(" B", 100);
         Thread thread = new Thread(runnable);
         thread.start();
 
@@ -15,7 +15,7 @@ public class ThreadExample_2A {
 
         for (int k = 0; k < 10; k++) {
             Thread.sleep(250);
-            System.out.println("ThreadExample_2A k = " + k);
+            System.out.println("A");
         }
 
 
