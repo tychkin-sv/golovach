@@ -9,10 +9,10 @@ public class ThreadExample_1C {
 
         for (int k = 0; k < 10; k++) {
             Thread.sleep(250);
-            System.out.println("ThreadExample_1C A k = " + k);
+            System.out.println("A");
         }
 
-        PrintRunnable runnable = new PrintRunnable("B", 1000);
+        PrintRunnable runnable = new PrintRunnable(" B", 1000);
         Thread thread = new Thread(runnable);
         thread.start();
         System.out.println("main finished");
